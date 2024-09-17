@@ -14,14 +14,15 @@ body {
 header {
     background-color: #bb6400;
     color: white;
-    padding: 10px 20px;
+    margin: 10px;
+    padding: 25px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -144,6 +145,7 @@ html {
 @media (max-width: 490px) {
     header {
         flex-direction: linear;
+        display: flexbox;
     }
 
     nav ul {
