@@ -49,6 +49,7 @@ nav ul li a:hover {
     border-radius: 5px;
     animation: fade 3s infinite;
     transform: scale(1.5);
+    text-rendering: geometricPrecision;
 }
 
 #hero {
@@ -151,6 +152,7 @@ html {
     nav ul {
         flex-direction: column;
         margin-top: 10px;
+        display: inline-block;
     }
 
     #hero h2 {
@@ -166,3 +168,18 @@ html {
         padding: 8px 15px;
     }
 }
+
+*::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(109, 106, 102);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 50px;
+    border: 3px solid orange;
+  }
