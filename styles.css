@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .logo h1 {
@@ -29,6 +30,8 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: nowrap; 
+    margin-left: auto; 
 }
 
 nav ul li {
@@ -143,16 +146,23 @@ html {
     }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 768px) {
     header {
-        flex-direction: linear;
-        display: flexbox;
+        padding: 10px 15px;
     }
 
     nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-        display: inline-block;
+        width: 100%;
+        display: inline;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        display: inline;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
     }
 
     #hero h2 {
