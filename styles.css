@@ -22,11 +22,6 @@ header {
     flex-wrap: nowrap;
 }
 
-.logo h1 {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
 nav ul {
     list-style: none;
     display: flex;
