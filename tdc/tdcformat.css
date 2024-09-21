@@ -63,4 +63,8 @@ button:hover {
     margin-bottom: 15px;
 }
 
-
+img{
+    width: 300pt;
+    height: 300pt;
+    border: 3px solid rgb(255, 255, 255);
+}
