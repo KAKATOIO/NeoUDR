@@ -46,7 +46,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #c73a0f;
     color: white;
     border: none;
     border-radius: 4px;
@@ -55,10 +55,12 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #a02e0b;
 }
 
 /* Estilo do reCAPTCHA */
 .g-recaptcha {
     margin-bottom: 15px;
 }
+
+
