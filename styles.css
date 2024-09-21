@@ -76,10 +76,51 @@ nav ul li a:hover {
     border-style: double;
     border-radius: 20px;
     margin: 90px;
-    background-image: linear-gradient(-45deg, #36692b, #5c2159, #a13737, #1a5f20);
+    background-color: rgba(128, 128, 128, 0.411);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
+    color: rgb(0, 0, 0);
+    transition: 1s linear;
+}
+
+#sobre:hover{
     color: whitesmoke;
+    background-image: linear-gradient(-45deg, #36692b, #5c2159, #a13737, #1a5f20);
+    transition: 1s linear;
+}
+
+#foco{
+    border-style: double;
+    border-radius: 20px;
+    margin: 90px;
+    background-color: rgba(128, 128, 128, 0.411);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    color: rgb(0, 0, 0);
+    transition: 1s linear;
+}
+
+#foco:hover{
+    color: whitesmoke;
+    background-image: linear-gradient(-45deg, #36692b, #5c2159, #a13737, #1a5f20);
+    transition: 1s linear;
+}
+
+#ideias{
+    border-style: double;
+    border-radius: 20px;
+    margin: 90px;
+    background-color: rgba(128, 128, 128, 0.411);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    color: rgb(0, 0, 0);
+    transition: 1s linear;
+}
+
+#ideias:hover{
+    color: whitesmoke;
+    background-image: linear-gradient(-45deg, #36692b, #5c2159, #a13737, #1a5f20);
+    transition: 1s linear;
 }
 
 @keyframes Gradient {
