@@ -6,11 +6,8 @@
 }
 
 body {
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background: #000000;
+    min-height: 100vh;
 }
 
 .container {
@@ -87,19 +84,45 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(90deg, rgb(8, 40, 221), rgb(158, 30, 30), rgb(8, 40, 221));
     background-size: 500% 100%;
-    animation: degrade_de_fundo 10s infinite alternate ;
     }
-    
-    @keyframes degrade_de_fundo {
-        0%{
-            background-position-x: 0%;
-        }
-        100%{
-            background-position-x: 100%;
-        }
+
+.fundo_bolhas{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.bolhas{
+    position: absolute;
+    display: flex;
+}
+.bolhas span{
+    width: 10px;
+    height: 10px;
+    background:white;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ffffff44,
+    0 0 50px #ffffff,
+    0 0 100px #ffffff;
+    animation: ANIbolhas calc(30s / var(--i)) linear infinite;
+}
+.bolhas span:nth-of-type(even) {
+  background: #c7c7c7; 
+  box-shadow: 0 0 0 10px #c7c7c744,
+  0 0 50px #c7c7c7,
+  0 0 100px #c7c7c7;
+}
+@keyframes ANIbolhas{
+    0%{ transform: translateY(100vh) scale(0);
+
     }
+    100%{
+        transform: translateX(-10vh) scale(1);
+
+    }
+}
     
 @media screen and (max-width: 750px) {
     img{
